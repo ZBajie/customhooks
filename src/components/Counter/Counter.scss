@@ -1,0 +1,11 @@
+.counter {
+  div {
+    padding: $padding-secondary;
+  }
+  .local {
+    background-color: $background-color-primary;
+  }
+  .use-custom-hook {
+    background-color: $background-color-secondary;
+  }
+}

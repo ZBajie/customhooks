@@ -1,0 +1,7 @@
+@mixin button-base {
+  padding: $padding-primary;
+  background-color: $button-background-color-primary;
+  color: $button-text-color-primary;
+  box-shadow: 5px 5px 5px $box-shadow-color-primary;
+  border-radius: $border-radius-primary;
+}
