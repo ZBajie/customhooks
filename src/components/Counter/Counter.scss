@@ -1,11 +1,30 @@
 .counter {
+  button {
+    font-size: $font-size-tertiary;
+    margin: $margin-primary;
+    padding: $padding-primary;
+    background-color: $button-background-color-primary;
+    color: $button-color-primary;
+    border-radius: $border-radius-primary;
+  }
   div {
-    padding: $padding-secondary;
+    padding: 2rem;
   }
   .local {
     background-color: $background-color-primary;
   }
   .use-custom-hook {
     background-color: $background-color-secondary;
+    color: $color-secondary;
+  }
+  div {
+    font-size: $font-size-tertiary;
+    label {
+      margin: $margin-primary;
+    }
+    input {
+      width: 70px;
+      font-size: $font-size-tertiary;
+    }
   }
 }

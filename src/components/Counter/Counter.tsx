@@ -8,10 +8,12 @@ const Counter = () => {
   const [minValue, setMinValue] = useState<number | undefined>(undefined)
 
   const [initialValue, setInitialValue] = useState(0)
+  const [incrementValue, setIncrementValue] = useState(1)
   const { count, increment, decrement, reset, even } = useCounter(
     initialValue,
     maxValue,
-    minValue
+    minValue,
+    incrementValue
   )
 
   return (
@@ -32,20 +34,20 @@ const Counter = () => {
       <div className="use-custom-hook">
         <h2>custom hook</h2>
         <p>{count}</p>
-        {even ? <p>number is odd</p> : <p>number is even</p>}
-        <button
-          onClick={() => {
-            increment()
-          }}
-        >
-          Increment
-        </button>
+        {even ? <p>number is even</p> : <p>number is odd</p>}
         <button
           onClick={() => {
             decrement()
           }}
         >
           Decrement
+        </button>
+        <button
+          onClick={() => {
+            increment()
+          }}
+        >
+          Increment
         </button>
         <div>
           <label htmlFor="initValue">Initial value</label>
@@ -54,6 +56,16 @@ const Counter = () => {
             type="number"
             onChange={(e) => {
               setInitialValue(parseInt(e.target.value))
+            }}
+          />
+
+          <label htmlFor="incrementValue">Increment step</label>
+          <input
+            type="number"
+            name=""
+            id="incrementValue"
+            onChange={(e) => {
+              setIncrementValue(parseInt(e.target.value))
             }}
           />
 
