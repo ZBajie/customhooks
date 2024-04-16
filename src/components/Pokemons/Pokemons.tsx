@@ -22,7 +22,7 @@ const Pokemons = () => {
     <section className="pokemons">
       <h2>Pokemons</h2>
       <p>{loading ? "loading" : "loaded"}</p>
-      {data?.results && <p>{data.results[1].name}</p>}{" "}
+      {data?.results && <p>{data.results[1].name}</p>}
     </section>
   )
 }
