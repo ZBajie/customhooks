@@ -1,9 +1,11 @@
 import Counter from "./components/Counter/Counter"
+import Toggle from "./components/Toggle/Toggle"
 
 function App() {
   return (
     <>
-      <h1>custom hooks</h1>
+      <h1>Custom hooks</h1>
+      <Toggle />
       <Counter />
     </>
   )

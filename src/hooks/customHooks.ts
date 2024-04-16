@@ -36,3 +36,11 @@ export function useCounter(
 
   return { count, increment, decrement, reset, even }
 }
+
+export function useToggle() {
+  const [toggleValue, setToggleValue] = useState<boolean>(true)
+
+  const toggle = () => setToggleValue(!toggleValue)
+
+  return { toggleValue, toggle }
+}

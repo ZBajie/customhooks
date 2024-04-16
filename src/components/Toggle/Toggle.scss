@@ -1,0 +1,11 @@
+.toggle {
+  background-color: $background-color-secondary;
+  color: $color-secondary;
+  padding: $padding-secondary;
+  font-size: $font-size-tertiary;
+  text-align: center;
+
+  button {
+    @include button-base;
+  }
+}
