@@ -1,0 +1,10 @@
+.pokemons {
+  background-color: $background-color-primary;
+  padding: $padding-secondary;
+  font-size: $font-size-tertiary;
+  text-align: center;
+
+  button {
+    @include button-base;
+  }
+}
