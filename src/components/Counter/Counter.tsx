@@ -32,7 +32,7 @@ const Counter = () => {
         </button>
       </div>
       <div className="use-custom-hook">
-        <h2>custom hook</h2>
+        <h2>Custom hook</h2>
         <p>{count}</p>
         {even ? <p>number is even</p> : <p>number is odd</p>}
         <button
@@ -59,7 +59,7 @@ const Counter = () => {
             }}
           />
 
-          <label htmlFor="incrementValue">Increment step</label>
+          <label htmlFor="incrementValue">Step</label>
           <input
             type="number"
             name=""

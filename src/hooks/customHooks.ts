@@ -15,7 +15,7 @@ export function useCounter(
 
   const increment = (): void => {
     if (maxValue) {
-      if (count < maxValue) {
+      if (count + incrementValue <= maxValue) {
         setCount(count + incrementValue)
       }
     } else {
@@ -25,7 +25,7 @@ export function useCounter(
 
   const decrement = (): void => {
     if (minValue) {
-      if (count > minValue) {
+      if (count - incrementValue >= minValue) {
         setCount(count - incrementValue)
       }
     } else {
