@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useFetch } from "../../hooks/customHooks"
 
-type Root = {
+type Data = {
   count: number
   next: string
   previous: string
@@ -15,7 +15,7 @@ type Result = {
 
 const Pokemons = () => {
   const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon/")
-  const { data, loading, error } = useFetch<Root>(url)
+  const { data, loading, error } = useFetch<Data>(url)
 
   console.log(data)
   return (
